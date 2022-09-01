@@ -8,6 +8,13 @@ public class Person
         this.Idade = 0;
     }
 
+    public Person(string Nome, int Idade, string Cpf)
+    {
+        this.Nome = Nome;
+        this.Idade = Idade;
+        this.Cpf = Cpf;
+    }
+
     public string Nome { get; set; }
     public int Idade { get; set; }
     public string Cpf { get; set; }
