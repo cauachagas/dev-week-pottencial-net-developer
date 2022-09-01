@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using src.Models;
 
 namespace src.Controllers;
 
@@ -7,8 +8,9 @@ namespace src.Controllers;
 public class PersonController : ControllerBase
 {
     [HttpGet]
-    public string Hello()
+    public Person Get()
     {
-        return "Olá, Mundo!";
+        Person pessoa = new Person();
+        return pessoa;
     }
 }
