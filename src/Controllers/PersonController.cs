@@ -11,6 +11,8 @@ public class PersonController : ControllerBase
     public Person Get()
     {
         Person pessoa = new Person();
+        Contract novoContrato = new Contract();
+        pessoa.Contratos.Add(novoContrato);
         return pessoa;
     }
 }
