@@ -19,19 +19,19 @@ public class PersonController : ControllerBase
     }
 
     [HttpPost]
-    public Person Post(Person pessoa)
+    public Person Post([FromBody]Person pessoa)
     {
         return pessoa;
     }
 
     [HttpPatch("{id}")]
-    public string Update(int id)
+    public string Update([FromRoute]int id)
     {
         return "Dados do id " + id + " atualizados";
     }
 
     [HttpDelete("{id}")]
-    public string Delete(int id)
+    public string Delete([FromRoute]int id)
     {
         return "Deletado Pessoa de id " + id;
     }
