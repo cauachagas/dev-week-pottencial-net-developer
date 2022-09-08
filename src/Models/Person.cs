@@ -6,6 +6,7 @@ public class Person
     {
         this.Nome = "Template";
         this.Idade = 0;
+        this.Contratos = new List<Contract>();
     }
 
     public Person(string Nome, int Idade, string Cpf)
@@ -13,10 +14,12 @@ public class Person
         this.Nome = Nome;
         this.Idade = Idade;
         this.Cpf = Cpf;
+        this.Contratos = new List<Contract>();
     }
 
     public string Nome { get; set; }
     public int Idade { get; set; }
     public string? Cpf { get; set; }
     public bool Ativado { get; set; }
+    public List<Contract> Contratos;
 }
