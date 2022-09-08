@@ -23,4 +23,10 @@ public class PersonController : ControllerBase
     {
         return pessoa;
     }
+
+    [HttpPatch("{id}")]
+    public string Update(int id)
+    {
+        return "Dados do id " + id + " atualizados";
+    }
 }
