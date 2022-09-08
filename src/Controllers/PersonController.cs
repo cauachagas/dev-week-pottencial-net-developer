@@ -25,7 +25,7 @@ public class PersonController : ControllerBase
     }
 
     [HttpPatch("{id}")]
-    public string Update([FromRoute]int id)
+    public string Update([FromRoute]int id, [FromBody]Person pessoa)
     {
         return "Dados do id " + id + " atualizados";
     }
