@@ -29,4 +29,10 @@ public class PersonController : ControllerBase
     {
         return "Dados do id " + id + " atualizados";
     }
+
+    [HttpDelete("{id}")]
+    public string Delete(int id)
+    {
+        return "Deletado Pessoa de id " + id;
+    }
 }
