@@ -21,5 +21,5 @@ public class Person
     public int Idade { get; set; }
     public string? Cpf { get; set; }
     public bool Ativado { get; set; }
-    public List<Contract> Contratos;
+    public List<Contract> Contratos { get; set; }
 }
