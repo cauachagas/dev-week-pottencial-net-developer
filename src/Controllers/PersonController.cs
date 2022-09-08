@@ -17,4 +17,10 @@ public class PersonController : ControllerBase
         pessoa.Contratos.Add(novoContrato2);
         return pessoa;
     }
+
+    [HttpPost]
+    public Person Post(Person pessoa)
+    {
+        return pessoa;
+    }
 }
